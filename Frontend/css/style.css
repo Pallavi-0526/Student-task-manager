@@ -1,0 +1,89 @@
+:root {
+  --bg-page:        #151B54;
+  --bg-navbar:      #1a2266;
+  --bg-card:        #ffffff;
+  --text-primary:   beige;
+  --text-heading:   beige;
+  --text-card:      #212529;
+  --navbar-border:  paleturquoise;
+  --input-bg:       #ffffff;
+  --input-text:     #212529;
+  --stat-total:     #e8f4fd;
+  --stat-pending:   #fff8e1;
+  --stat-completed: #e8f5e9;
+  --stat-overdue:   #fdecea;
+}
+
+body.light-mode {
+  --bg-page:        #f0f2f5;
+  --bg-navbar:      #ffffff;
+  --bg-card:        #ffffff;
+  --text-primary:   #212529;
+  --text-heading:   #212529;
+  --text-card:      #212529;
+  --navbar-border:  #dee2e6;
+  --input-bg:       #ffffff;
+  --input-text:     #212529;
+  --stat-total:     #e8f4fd;
+  --stat-pending:   #fff8e1;
+  --stat-completed: #e8f5e9;
+  --stat-overdue:   #fdecea;
+}
+
+body {
+  font-family: 'Times of Roman', serif;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h4, h5 {
+  color: var(--text-heading);
+}
+
+.navbar {
+  background-color: var(--bg-navbar) !important;
+  border-bottom: 2px solid var(--navbar-border);
+  transition: background-color 0.3s;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  transition: transform 0.3s, background-color 0.3s;
+  background-color: var(--bg-card);
+  color: var(--text-card);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.form-control, .form-select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: 1px solid var(--navbar-border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-primary);
+  transition: all 0.3s;
+}
+/* Drag to reorder */
+#task-list .card,
+#project-list .card {
+    cursor: grab;
+}
+#task-list .card:active,
+#project-list .card:active {
+    cursor: grabbing;
+}
+#task-list .card[draggable="true"]:hover,
+#project-list .card[draggable="true"]:hover {
+    border-left: 3px solid var(--color-primary, #0d6efd);
+}

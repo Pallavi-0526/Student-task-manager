@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.ignoreFiles": [
+        "**/*.py",
+        "**/*.db",
+        "Backend/**"
+    ],
+    "liveServer.settings.fullReload": false,
+    "liveServer.settings.file": ""
+}
