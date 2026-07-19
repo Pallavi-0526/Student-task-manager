@@ -1,5 +1,4 @@
-const BASE_URL = "http://127.0.0.1:8000";
-
+const BASE_URL = "https://student-task-manager-maoh.onrender.com";
 document.addEventListener("DOMContentLoaded", function() {
     const loginBtn = document.getElementById("login-btn");
 
